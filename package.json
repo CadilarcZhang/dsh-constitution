@@ -1,0 +1,46 @@
+{
+  "name": "dsh-constitution",
+  "version": "0.1.0",
+  "description": "A sidebar panel for a personal global constitution whose text is injected into the system prompt of every DeepSeek Harness session.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "constitution",
+    "agents-md",
+    "system-prompt",
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CadilarcZhang/dsh-constitution.git"
+  },
+  "homepage": "https://github.com/CadilarcZhang/dsh-constitution#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

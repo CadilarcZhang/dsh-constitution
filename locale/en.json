@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Global constitution",
+    "description": "Adds a constitution entry to the sidebar: standing rules and constraints that are injected into the system prompt of every session."
+  }
+}
